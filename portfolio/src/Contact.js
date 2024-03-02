@@ -13,7 +13,7 @@ const Contact = () => {
     const handleSubmit=((e)=>{
        e.preventDefault()
        try{
-        axios.post('http://localhost:3001/app/user',{name,number,gmail})
+        axios.post('https://portfolio-hwfy.onrender.com/app/user',{name,number,gmail})
         .then((res)=>{
             if (res.data==='posted'){
               alert('posted')
