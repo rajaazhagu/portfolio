@@ -16,11 +16,14 @@ const Contact = () => {
         axios.post('https://portfolio-hwfy.onrender.com/app/user',{name,number,gmail})
         .then((res)=>{
             if (res.data==='posted'){
-              alert('posted')
+              alert('I will reach through you with these details')
             }
             else{
               alert('not posted')
             }
+            setname('')
+            setgmail('')
+            setnumber('')
         })
        }
        catch{
