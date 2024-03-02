@@ -24,6 +24,7 @@ const Contact = () => {
             setname('')
             setgmail('')
             setnumber('')
+            Navigate('/')
         })
        }
        catch{
